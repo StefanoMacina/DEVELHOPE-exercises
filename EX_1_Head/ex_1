@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML lesson</title>
+    <meta property="og:title" content="HTML Lesson" />
+    <link rel="icon"  href="/Head/favicon.ico"/>
+    <meta name="author" content="Stefano Macina Leone">
+    <meta property="og:type" content="image.something" />
+    <meta property="og:url" content="https://www.link.com" />
+    <meta property="og:description" 
+          content="My first exercise by adding  meta tag in a web page without CSS" />
+    <meta name="keywords" content="HTML, meta tag, tag reference">
+    
+
+  </head>
+  <body></body>
+</html>
