@@ -1,11 +1,14 @@
-* {
+:root {
+    --grey: rgb(228, 228, 228);
+}
+
+ * {
     padding:0;
     text-align:left;
-    
 }
 
 #card {
-    border:1px solid grey;
+    border:1px solid var(--grey);
     border-radius: 5px;
     margin: auto;
     max-width: 300px;
@@ -13,11 +16,15 @@
 
 #container {
     padding-left: 8%;
-    border-bottom: 1px solid grey
+    border-bottom: 1px solid var(--grey);
 }
 
 .item, .link {
  padding-left: 8%
+}
+
+.item {
+    border-bottom : 1px solid var(--grey);
 }
 
 
