@@ -30,17 +30,10 @@ a{text-decoration: none;}
     border-bottom: 2px solid white;
 }
 
-.nav-left{
-    border: 1px solid red;
-
-
-}
-
 .nav-right{
-    border: 1px solid red;
+    
     width: 50%;
     text-align: right;
-    
 }
 
 li {
