@@ -13,7 +13,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    max-height: 100px;
+    max-height: 250px;
     border-top-right-radius: 3px;
     border-top-left-radius:3px;
 }
@@ -49,4 +49,14 @@
 
 .item {
     border-bottom : 1px solid var(--grey);
+}
+
+.link a {
+    text-decoration: none;
+}
+
+.link{
+    list-style: none;
+    display: inline;
+
 }
