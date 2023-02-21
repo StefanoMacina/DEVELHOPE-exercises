@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --main:rgba(210, 224, 245, 0.637);
+    --brand_1:#2b2bb2;
+    --brand_2:black;
+}
+body {
+    height:100vh;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:var(--main);
+    width:200px;
+    height: 100%;
+    border-right:1px solid;
+    border-right-color: var(--brand_2)
+}
+
+
+.nav_top img {
+    width: 70%;
+    margin-top:10px;
+    
+   
+}
+
+#logo_box {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.nav_top {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.links {
+    height:100%;
+}
+
+.nav_top .links ul {
+    padding:10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+    
+}
+
+
+.nav_bottom {
+    padding: 10px;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.avatar {
+    width: 50%;
+    
+
+}
+.avatar img{
+    width:100%;
+    border-radius: 50%;
+    border:3px solid var(--brand_1)
+}
+
+.userName{
+    display: flex;
+    flex-direction: row;
+}
+
+.userName p {
+ margin:5px;
+}
+
+.links ul li a {
+    color:#2b2b2b;
+    text-decoration: none;
+}
+.links ul li a:hover {
+    color:#2b2bb2;
+    font-size: 20px;
+    transition: 0.3s ;
+}
