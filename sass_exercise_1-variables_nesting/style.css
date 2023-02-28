@@ -1,0 +1,25 @@
+.container {
+  border: 1px solid red;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: green;
+  text-decoration: blue underline;
+}
+
+.box_container {
+  display: flex;
+  margin: 15px;
+  color: blue;
+}
+.box_container article {
+  border: 1px solid green;
+  padding: 15px;
+}
+.box_container :nth-child(even) {
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */
