@@ -1,0 +1,45 @@
+
+
+div{
+    border:1px solid rgb(176, 8, 8);
+    padding:15px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1{
+        font-size: 30px;
+        text-decoration: blue underline;
+        color:green
+    }
+    
+}
+
+
+@mixin article-card($color , $border , $font-size:1rem,){
+    color: $color;
+    border: $border;
+    font-size: $font-size;
+    height: 150px;
+    
+}
+
+
+.footer {
+    display:flex; justify-content: center; align-items: center; 
+    @include article-card(green, 1px solid blue ,1.5rem )
+}
+
+section{
+    display: flex;
+    article:nth-child(even){
+        color: red
+    } .box{
+        display:flex; justify-content: center; align-items: center; margin-bottom: 15px;
+        @include article-card(blue, 1px solid green)
+        
+    }
+    
+}
+
