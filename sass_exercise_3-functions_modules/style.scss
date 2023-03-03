@@ -1,0 +1,49 @@
+@use "variables.scss";
+
+
+div{
+    border:1px solid rgb(176, 8, 8);
+    padding:(variables.$padding);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1{
+        font-size: (variables.$font-size-large);
+        text-decoration: blue underline;
+        color:green
+    }
+    
+}
+
+
+@mixin article-card($color , $border , $font-size:(variables.$font-size-small)){
+    color: $color;
+    border: $border;
+    font-size: $font-size;
+    height: (variables.$height);
+    @content
+    
+}
+
+
+.footer {
+    display:flex; justify-content: center; align-items: center; 
+    @include article-card(green, variables.$border-width solid blue) {   
+        font-size: (variables.$font-size);
+    }
+}
+
+section{
+    display: flex;
+    article:nth-child(even){
+        color: red
+    } .box{
+        display:flex; justify-content: center; align-items: center; margin-bottom: variables.$margin-bottom;
+        @include article-card(blue, variables.$border-width solid green)
+        
+    }
+    
+}
+
