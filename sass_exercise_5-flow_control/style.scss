@@ -1,4 +1,5 @@
 @use "variables";
+@use "sass:color";
 
 @mixin article-card($color , $border , $font-size:(variables.$font-size-small)){
     color: $color;
@@ -21,6 +22,9 @@ div {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    gap:15px;
+    
         
     & h1 {
         @extend %text;
@@ -41,6 +45,7 @@ div {
             & div {
                 width: variables.$box-width;
                 height: variables.$box-width;
+                align-items: flex-start;
             }
         }
        
@@ -53,7 +58,7 @@ div {
             
         }
         & .footer {
-            display:flex; justify-content: center; align-items: center; 
+            display:flex; justify-content: center; align-items: center; width:100%; ;
             @include article-card(green, variables.$border-width solid blue) {   
                 font-size: (variables.$font-size);
             }
@@ -67,10 +72,19 @@ div {
 $base-color:white;
 
 @for $i from 1 through 20 {
-        .fs:nth-child(#{$i}){
-        font-size: $i + rem;
+        section div:nth-child(#{$i}){
         background-color: darken($base-color, $i * 5%);
-}
-}
+        
+        @if $i == 10 {
+            color:red;
+            background-color: blue;
+        }
+        }
+    }
 
-
+@for $var from 1 through 20 {
+    .fs-#{$var}rem {
+        font-size: $var + rem;
+        }
+    }
+    

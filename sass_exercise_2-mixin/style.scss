@@ -17,7 +17,7 @@ div{
 }
 
 
-@mixin article-card($color , $border , $font-size:1rem,){
+@mixin article-card($color , $border , $font-size:16px,){
     color: $color;
     border: $border;
     font-size: $font-size;
@@ -28,7 +28,7 @@ div{
 
 .footer {
     display:flex; justify-content: center; align-items: center; 
-    @include article-card(green, 1px solid blue ,1.5rem )
+    @include article-card(green, 1px solid blue ,24px )
 }
 
 section{

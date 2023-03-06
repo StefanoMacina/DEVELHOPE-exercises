@@ -11,6 +11,8 @@ div {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  gap: 15px;
 }
 div h2 {
   padding: 1rem;
@@ -27,6 +29,7 @@ div section:nth-child(4) {
 div section:nth-child(4) div {
   width: 2.8125rem;
   height: 2.8125rem;
+  align-items: flex-start;
 }
 div section article:nth-child(even) {
   color: red;
@@ -45,6 +48,7 @@ div section .footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   color: green;
   border: 0.0625rem solid blue;
   font-size: 1rem;
@@ -52,104 +56,166 @@ div section .footer {
   font-size: 1.5rem;
 }
 
-.fs:nth-child(1) {
-  font-size: 1rem;
+section div:nth-child(1) {
   background-color: #f2f2f2;
 }
 
-.fs:nth-child(2) {
-  font-size: 2rem;
+section div:nth-child(2) {
   background-color: #e6e6e6;
 }
 
-.fs:nth-child(3) {
-  font-size: 3rem;
+section div:nth-child(3) {
   background-color: #d9d9d9;
 }
 
-.fs:nth-child(4) {
-  font-size: 4rem;
+section div:nth-child(4) {
   background-color: #cccccc;
 }
 
-.fs:nth-child(5) {
-  font-size: 5rem;
+section div:nth-child(5) {
   background-color: #bfbfbf;
 }
 
-.fs:nth-child(6) {
-  font-size: 6rem;
+section div:nth-child(6) {
   background-color: #b3b3b3;
 }
 
-.fs:nth-child(7) {
-  font-size: 7rem;
+section div:nth-child(7) {
   background-color: #a6a6a6;
 }
 
-.fs:nth-child(8) {
-  font-size: 8rem;
+section div:nth-child(8) {
   background-color: #999999;
 }
 
-.fs:nth-child(9) {
-  font-size: 9rem;
+section div:nth-child(9) {
   background-color: #8c8c8c;
 }
 
-.fs:nth-child(10) {
-  font-size: 10rem;
+section div:nth-child(10) {
   background-color: gray;
+  color: red;
+  background-color: blue;
 }
 
-.fs:nth-child(11) {
-  font-size: 11rem;
+section div:nth-child(11) {
   background-color: #737373;
 }
 
-.fs:nth-child(12) {
-  font-size: 12rem;
+section div:nth-child(12) {
   background-color: #666666;
 }
 
-.fs:nth-child(13) {
-  font-size: 13rem;
+section div:nth-child(13) {
   background-color: #595959;
 }
 
-.fs:nth-child(14) {
-  font-size: 14rem;
+section div:nth-child(14) {
   background-color: #4d4d4d;
 }
 
-.fs:nth-child(15) {
-  font-size: 15rem;
+section div:nth-child(15) {
   background-color: #404040;
 }
 
-.fs:nth-child(16) {
-  font-size: 16rem;
+section div:nth-child(16) {
   background-color: #333333;
 }
 
-.fs:nth-child(17) {
-  font-size: 17rem;
+section div:nth-child(17) {
   background-color: #262626;
 }
 
-.fs:nth-child(18) {
-  font-size: 18rem;
+section div:nth-child(18) {
   background-color: #1a1a1a;
 }
 
-.fs:nth-child(19) {
-  font-size: 19rem;
+section div:nth-child(19) {
   background-color: #0d0d0d;
 }
 
-.fs:nth-child(20) {
-  font-size: 20rem;
+section div:nth-child(20) {
   background-color: black;
+}
+
+.fs-1rem {
+  font-size: 1rem;
+}
+
+.fs-2rem {
+  font-size: 2rem;
+}
+
+.fs-3rem {
+  font-size: 3rem;
+}
+
+.fs-4rem {
+  font-size: 4rem;
+}
+
+.fs-5rem {
+  font-size: 5rem;
+}
+
+.fs-6rem {
+  font-size: 6rem;
+}
+
+.fs-7rem {
+  font-size: 7rem;
+}
+
+.fs-8rem {
+  font-size: 8rem;
+}
+
+.fs-9rem {
+  font-size: 9rem;
+}
+
+.fs-10rem {
+  font-size: 10rem;
+}
+
+.fs-11rem {
+  font-size: 11rem;
+}
+
+.fs-12rem {
+  font-size: 12rem;
+}
+
+.fs-13rem {
+  font-size: 13rem;
+}
+
+.fs-14rem {
+  font-size: 14rem;
+}
+
+.fs-15rem {
+  font-size: 15rem;
+}
+
+.fs-16rem {
+  font-size: 16rem;
+}
+
+.fs-17rem {
+  font-size: 17rem;
+}
+
+.fs-18rem {
+  font-size: 18rem;
+}
+
+.fs-19rem {
+  font-size: 19rem;
+}
+
+.fs-20rem {
+  font-size: 20rem;
 }
 
 /*# sourceMappingURL=style.css.map */
