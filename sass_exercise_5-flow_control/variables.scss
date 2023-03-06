@@ -1,0 +1,11 @@
+@use "function.scss" as f;
+
+$padding: f.rem_convert(15px);
+$font-size-large: f.rem_convert(30px);
+$height: f.rem_convert(150px);
+$font-size-small:f.rem_convert(16px);
+$font-size: f.rem_convert(24px);
+$margin-bottom: f.rem_convert(15px);
+$border-width: f.rem_convert(1px);
+$h2-padding: f.rem_convert(16px);
+$box-width: f.rem_convert(45px);

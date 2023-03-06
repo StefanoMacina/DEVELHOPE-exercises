@@ -1,0 +1,76 @@
+@use "variables";
+
+@mixin article-card($color , $border , $font-size:(variables.$font-size-small)){
+    color: $color;
+    border: $border;
+    font-size: $font-size;
+    height: (variables.$height);
+    @content
+}
+
+%text{
+    font-size: (variables.$font-size-large);
+    text-decoration: blue underline;
+    color:green
+}
+
+div {
+    border:1px solid rgb(176, 8, 8);
+    padding:(variables.$padding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        
+    & h1 {
+        @extend %text;
+    }
+     
+    & h2 {
+        @extend h1;
+        padding: variables.$h2-padding;
+        border: variables.$border-width solid red;
+    }
+    & section {
+        display: flex;
+
+        &:nth-child(4) {
+            width: 100%;
+            height: auto;
+            justify-content: space-between;
+            & div {
+                width: variables.$box-width;
+                height: variables.$box-width;
+            }
+        }
+       
+        & article:nth-child(even) {
+            color: red;
+        } 
+        & .box {
+            display:flex; justify-content: center; align-items: center; margin-bottom: variables.$margin-bottom;
+            @include article-card(blue, variables.$border-width solid green)
+            
+        }
+        & .footer {
+            display:flex; justify-content: center; align-items: center; 
+            @include article-card(green, variables.$border-width solid blue) {   
+                font-size: (variables.$font-size);
+            }
+        
+        }
+        
+    }
+
+}
+
+$base-color:white;
+
+@for $i from 1 through 20 {
+        .fs:nth-child(#{$i}){
+        font-size: $i + rem;
+        background-color: darken($base-color, $i * 5%);
+}
+}
+
+
