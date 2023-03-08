@@ -8,25 +8,23 @@
 function calculateSalary(role) {
   switch(role) {
     case "ceo":
-      console.log(role + " " + "=>"+ " " + "€2200");
-      break;
+      return(role + " " + "=>"+ " " + "€2200");
+      
     case "manager":
-      console.log(role + " " + "=>"+ " " + "€1800");
-      break;
+      return(role + " " + "=>"+ " " + "€1800");
+      
     case "cto":
-      console.log(role + " " + "=>"+ " " + "€1800");
-      break;
+      return(role + " " + "=>"+ " " + "€1800");
+      
     case "developer":
-      console.log(role + " " + "=>"+ " " + "€1500");
-      break;
+      return(role + " " + "=>"+ " " + "€1500");
+      
     default:
-      console.log("€1000");
-      break;
+      return("€1000");
+      
 
   }
 }
-
-
 
 
 const ceoSalary = calculateSalary('ceo');
@@ -39,4 +37,4 @@ console.log(ceoSalary);
 console.log(managerSalary);
 console.log(ctoSalary);
 console.log(developerSalary);
-console.log(otherSalary);
+console.log(otherSalary); 
