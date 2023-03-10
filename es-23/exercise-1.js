@@ -6,4 +6,10 @@ const person = {
 
 // Print values of person using Object.keys
 
-console.log(Object.keys(person))
+let keys = Object.keys(person)
+
+
+for(let key of keys) {
+  console.log(`${key} ${person[key]}`)
+}
+
