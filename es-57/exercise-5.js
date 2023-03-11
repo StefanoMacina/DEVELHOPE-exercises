@@ -1,4 +1,4 @@
-function sortPeopleByAge(arr) {
+function sortPeopleByAge() {
   
 }
 
