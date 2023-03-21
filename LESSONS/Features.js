@@ -24,7 +24,8 @@
 
 
 //-------------------------------------------------------------
-//DESTRUCTURING OBJECTS
+
+//   DESTRUCTURING OBJECTS
 //
 
 
@@ -47,8 +48,62 @@ const sister = bob.siblings.sister */
 
 /* console.log(firstName, lastName, city, sister) */
 
-// con destructuring
+// CON DESTRUCTURING--------------
                         //accedo a siblings e assegno alias
 /* const {first, last, city, siblings: {sister:favor}} = bob */
 
 /* console.log(first, city, favor) */
+
+
+
+//---------------------------------------------------------------------------------
+//
+//  SPREAD OPERATOR
+// 
+//  Permette di creare un nuovo array/oggetto da un altro in una singola riga di codice
+
+let arr = [1,2,3,4]
+
+let obj = {
+    "key1" : 1,
+    "key2" : 2,
+    "nested" : {
+        "mult" : 4,
+        "str" : 5
+    }
+}
+
+// si vuole creare un nuovo array utilizzando quello presente, ma con nuovi elementi all'interno,
+// utilizzando .push si va a modificare anche il vecchio array:
+
+
+ let newArr = arr;
+
+newArr.push(3) 
+
+/* console.log(newArr)
+console.log(arr) */
+
+// Con lo spread operator NON si modifica il vecchio array:
+
+let newArr1 = [...arr, 3];    // spread operator = '...' , il push viene fatto aggiungendo elementi dopo la virgola
+
+/* console.log(arr)
+console.log(newArr1) */
+
+
+//-----------------------------------------------------------------------------------------
+
+
+// REST OPERATOR
+
+// Permette di assegnare altri valori ed una variabile durante il destructuring evitando che vengano ignorati:
+
+
+let arr1 = [1,2,3,4,  6,7,8,9]
+
+let [a, b, c, d, ...rest] = arr1
+
+/* console.log(rest[0]);
+console.log(rest[1])   */
+
