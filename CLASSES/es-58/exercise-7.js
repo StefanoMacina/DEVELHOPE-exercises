@@ -9,14 +9,12 @@ class Person {
     };
   }
 
-
     set first(value){
       this.firstName = value
     }
     set last(value){
       this.lastName = value
     }
-
     set age(value){
       this.ages = value
     }

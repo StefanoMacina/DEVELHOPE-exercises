@@ -20,7 +20,7 @@ class Circle {
 class AreaCalculator {
   static calculate(type){
     if(type instanceof Square){
-      return type.side * 2
+      return type.side * type.side
     } else if (type instanceof Rectangle){
       return type.width * type.height
     } else if (type instanceof Circle) {

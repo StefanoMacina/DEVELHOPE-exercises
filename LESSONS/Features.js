@@ -107,3 +107,51 @@ let [a, b, c, d, ...rest] = arr1
 /* console.log(rest[0]);
 console.log(rest[1])   */
 
+
+
+
+//------------------------------------------------------------------------------------------
+
+//JSON METHODS
+
+
+//Permette di convertire un oggetto complesso in una singola stringa
+
+//JSON.stringify() =   OBJECT -> JSON
+//JSON.parse() =       JSON   -> OBJECT
+
+//senza JSON:
+// si utilizza toString() per convertire in stringa, questa modalità non è dinamica e può creare errori
+
+/* let user = {
+    name: "Jhon",
+    age : "30",
+
+    toString(){
+        return `{name: "${this.name}", age: ${this.age}}`;
+    }
+}
+
+console.log(user)
+ */
+
+
+// con JSON:   OBJECT -> JSON:
+
+/* let user = {
+    name : "jhon",
+    age : 30
+}   
+
+let json = JSON.stringify(user)
+
+console.log(typeof(json))
+console.log(json)
+ */
+
+
+
+
+
+
+
