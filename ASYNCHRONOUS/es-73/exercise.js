@@ -12,4 +12,4 @@ function callback() {
   console.log("Hello");
 }
 
-printAsyncName(ex, "Stefano");
+printAsyncName(callback, "Stefano");
