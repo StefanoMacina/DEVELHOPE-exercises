@@ -21,7 +21,7 @@ job()
 
 //-------------------------------------------------------------------
 
-/* function job(data){
+/*  function job(data){
     return new Promise((resolve, reject)=>{
         if(isNaN(data)){
             reject("Error")
@@ -38,9 +38,9 @@ job()
 }
 job(4)
     .then((message) => console.log(message))
-    .catch((message) => console.log(message))
- */
+    .catch((message) => console.log(message)) */
 
+ 
 // -------------------------------------------------------------------
 // crea una funzione che ritorni una promise come prima suando async
 
