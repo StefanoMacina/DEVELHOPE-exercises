@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center ;
+}
+
+#dogImage{
+    display: flex;
+    justify-content: center;
+}
+
+
+#title{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    border-radius: 50%;
+    border: 5px dashed blue;
+    object-fit:cover;
+}
+
+#btn{
+    width: 100%;
+    height:20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+button{
+    padding: 10px;
+    font-weight: 700;
+    border-radius: 5px;
+    
+}
+
+#refresh{
+    margin-right: 5px;
+}
+
+#stopBtn{
+    margin-left: 5px;
+}
+
+#stopBtn:hover{
+    background-color: brown;
+    color:white
+}
+
+#stopBtn:active{
+    background-color: orange;
+}
+
+#refresh:hover{
+    background-color: green;
+    color: white
+}
+
+#refresh:active{
+    background-color: orange;
+}

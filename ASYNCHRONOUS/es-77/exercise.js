@@ -49,6 +49,7 @@ getUserStatus(isLogged)
         /* .then((val) => JSON.parse(val)) */
         .then((val) => console.log(val))
         .catch((error) => console.log(`${error.name} : ${error.type} user`))
+        .finally(() => console.log("Code executed"))
 
 
 

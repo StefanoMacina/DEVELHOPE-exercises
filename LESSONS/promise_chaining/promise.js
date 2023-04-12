@@ -34,7 +34,7 @@ function getUsername({name}){
 //  1) CHIAMARE UNA FUNZIONE
 //  isUserLoggedIn(userId)
 isLoggedIn(3)
-//      2) IN BASE AL SUO OUTPUT CHIAMO LA SECONDA FUNZIONE
+//      2) IN BASE AL SUO OUTPUT CHIAMO LA SECONDA FUNZIONE  dove ora il valore di output di isLoggedin = 3 (UserId) e verrà passato come (val) a getUserDetails
 //      .then((userId) => getUserDetails())   
     .then((val) => getUserDetails(val))
     //  3) IN BASE AL SUO OUTPUT CHIAMO LA TERZA FUNZIONE
@@ -46,5 +46,6 @@ isLoggedIn(3)
     //  5)  INFINE GESTISCO GLI ERRORI IN QUALUNQUE ALTRA FUNZIONE
     //    .catch((err) => console.log(err))
     .catch((error) => console.log(error.name))
+
 
 
