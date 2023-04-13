@@ -7,8 +7,9 @@ refreshBtn.addEventListener("click", () => {
 })
 
 stopBtn.addEventListener("click", () => {
-    clearInterval(interval)
+    setTimeout(clearInterval(interval),5000)
 })
+
 
 // (1)
 //  fetch restituisce una promise, và concatenato un metodo per ottenere i dati dalla promise:
@@ -41,7 +42,6 @@ stopBtn.addEventListener("click", () => {
 
 
     async function fetchData(){
-
         try {
             const response = await fetch('https://dog.ceo/api/breed/retriever/golden/images/random')
             const data = await response.json()
