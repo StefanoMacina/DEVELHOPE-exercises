@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+body nav {
+  background-color: orange;
+  width: 100%;
+  padding: 0 30px;
+  min-width: 900px;
+}
+body nav .menu {
+  list-style-type: none;
+}
+body nav .menu li {
+  display: inline-block;
+  font-size: 14px;
+  position: relative;
+}
+body nav .menu li a {
+  display: block;
+  padding: 15px 30px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+body nav .menu li a:hover {
+  color: #222;
+}
+body nav .menu .sub-menu {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  border: 1px solid #f5ba4b;
+  border-bottom: none;
+  visibility: hidden;
+  opacity: 0;
+}
+body nav .menu .sub-menu li {
+  font-size: 12px;
+  width: 200px;
+  border-bottom: 1px solid #f5ba4b;
+}
+body nav .menu .sub-menu a {
+  color: #222;
+}
+body nav .menu .sub-menu a:hover {
+  background-color: #f5ba4b;
+  color: #fff;
+}
+
+.menu .has-children:hover .sub-menu {
+  transition: 0.5s;
+  visibility: visible;
+  opacity: 1;
+  top: 50px;
+}
+
+/*# sourceMappingURL=navbar.css.map */
