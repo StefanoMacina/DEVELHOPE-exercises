@@ -12,7 +12,7 @@ class Welcome extends React.Component {
 
 class App extends React.Component {
   render() {
-    return <Welcome name={<strong>culo</strong>}/>;
+    return <Welcome name={<strong>ciao</strong>}/>;
   }
 }
 
