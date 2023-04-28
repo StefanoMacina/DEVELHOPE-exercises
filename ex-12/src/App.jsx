@@ -1,13 +1,10 @@
 import React from "react";
-import { Welcome } from "./Welcome";
-import { Age } from "./Age";
-
+import Welcome from "./Welcome";
 
 export function App() {
   return (
     <>
-      <Welcome name="Stefano" />
-      <Age age={19} />
+      <Welcome name="John" age={30} />
     </>
   );
 }
