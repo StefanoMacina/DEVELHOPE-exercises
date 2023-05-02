@@ -4,11 +4,13 @@ import ReactDOM from "react-dom";
 class Welcome extends React.Component {
   static defaultProps = {
     name: "Stefano",
+    age: 24,
   };
   render() {
     return (
       <>
         <h1>Welcome {this.props.name}</h1>
+        <Age age={this.props.age}/>
       </>
     );
   }
@@ -31,8 +33,7 @@ class App extends React.Component {
 
     return (
       <>
-        <Welcome />
-        <Age age={36}/>
+        <Welcome age={30}/>
       </>
     );
   }
