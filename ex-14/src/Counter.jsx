@@ -1,25 +1,22 @@
 import React from "react";
 
 export class Counter extends React.Component {
-  constructor(props){
+  state = {
+    counter : 0
+  };
+
+  constructor(props) {
     super(props)
 
-    this.state = {
-      counter : 0
-    }
-  }
-  
-  addtocounter = () => {
-    this.setState({ counter : this.state.counter + 1})
+    const id = setInterval(() => {
+      this.setState({
+       counter : this.state.counter += 1
+      })
+    }, 1000)
   }
 
-  componentDidMount() {
-    setInterval(this.addtocounter, 1000);
-  }
 
-  render(){
-    return <div>
-      {this.state.counter}
-      </div>
+  render() {
+    return <h1>{this.state.counter}</h1>;
   }
 }
