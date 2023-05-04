@@ -1,11 +1,13 @@
 import React from "react";
-import Welcome from "./Welcome";
+import { Welcome } from "./Welcome";
 
-export function App() {
-  return (
+
+
+export function App(){
+  return(
     <>
-      <Welcome name="John" age={30} />
+    <Welcome name ="jhon" />
+    
     </>
-  );
+  )
 }
-console.log(Welcome);

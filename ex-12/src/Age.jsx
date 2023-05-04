@@ -1,12 +1,7 @@
 import React from "react";
 
-
-export function Age(props){
-    const {age} = props
-    return(
-        <>
-        Your age is {age}
-        </>
-    )
+export function Age(props) {
+  return (
+   <h2>Your age is {props.age}</h2>
+  );
 }
-
