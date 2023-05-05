@@ -9,17 +9,35 @@ export class Counter extends React.Component {
     };
   }
 
+  
   componentDidMount() {
-    setInterval(() => {
-      this.setState(() => {
-        return {
-          count: this.state.count + this.props.increment,
-        };
-      });
-    }, this.props.interval);
+    this.id = setInterval(() => this.tick(), this.props.interval);
+  }
+  
+  componentWillUnmount() {
+    clearInterval(this.id);
   }
 
+  tick() {
+    this.setState((state, props) => {
+      return {
+        count : state.count + props.increment
+      }
+    })
+  }
+  
+  
   render() {
     return <CounterDisplay count={this.state.count} />;
   }
 }
+
+// componentDidMount() {
+//   setInterval(() => {
+//     this.setState((state, props) => {
+//       return {
+//         count: state.count + props.increment,
+//       };
+//     });
+//   }, this.props.interval);
+// }
