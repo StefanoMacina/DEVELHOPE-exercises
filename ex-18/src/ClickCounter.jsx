@@ -1,18 +1,17 @@
 import React, { Component } from "react";
 
 export default class ClickCounter extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      counter: 0,
-    };
-  }
+  state = {
+    counter: 0,
+  };
 
-  addToCounter = () =>{
-    this.setState({
-      counter: this.state.counter + 1,
+  addToCounter = () => {
+    this.setState((state) => {
+      return {
+        counter: state.counter + 1,
+      };
     });
-  }
+  };
 
   render() {
     return (

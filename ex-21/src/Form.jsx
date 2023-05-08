@@ -41,7 +41,7 @@ export class Form extends Component {
           value={this.state.password}
           onChange={this.handleChange}
         />
-        <Login isDisabled={this.inputEmpty()} onClick={this.onLogin}/>
+        <Login isDisabled={this.inputEmpty()} onclick={this.onLogin}/>
       </>
     );
   }
