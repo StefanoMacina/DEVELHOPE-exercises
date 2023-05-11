@@ -34,9 +34,10 @@ export class TodoList extends Component {
   };
 
   render() {
+    
     return (
-      <div>
-        <ul>
+      <div className="container">
+        <ul >
           {this.state.items.map((item, index) => (
             <li key={index}>
               {item}
