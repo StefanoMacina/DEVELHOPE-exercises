@@ -1,6 +1,10 @@
 import React from 'react'
 import { useState } from 'react'
 
+// NON CAPISCO PERCHè NON FA IL CONSOLE DELLA CHECKBOX E STAMPA ANCHE UN ALTRO VALORE IN CONSOLE CHE NON SO DA DOVE ARRIVI, HO RIFATTO TUTTO 
+// USANDO LO STESSO CODICE DEL VIDEO
+
+
 function Login() {
     const [input, setInput] = useState({
         username : '',

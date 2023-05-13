@@ -1,18 +1,16 @@
-import React, { Component } from 'react'
-// import Counter1 from './Counter1'
-// import Counter2 from './Counter2'
+import React from 'react'
 import Wrapper from './Wrapper'
+import Counter1 from './Components/Counter1'
 
-export class App extends Component {
-  render() {
-    return (
-      <div>
-        <Wrapper render={(count, incCount) => {
-          return <Counter1 count={count} incCount={incCount}/>
+function App() {
+  return (
+    <div>
+        
+        <Wrapper render = {(count, handleInc) => {
+            return <Counter1 count={count} incCount={handleInc}/>
         }}/>
-      </div>
-    )
-  }
+    </div>
+  )
 }
 
 export default App

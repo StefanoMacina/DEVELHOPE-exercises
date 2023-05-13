@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Clock } from './Clock'
+import Basi from './basi'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Clock />
+    <Basi />
     
   </React.StrictMode>,
 )

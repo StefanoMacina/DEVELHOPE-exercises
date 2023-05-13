@@ -9,9 +9,9 @@ function Counter() {
     const id = setInterval(() => {
       setCount((c) => c + 1);
     }, 1000);
-    
+
     return ()=> clearInterval(id);
-  }, []);
+  }, );
 
   return (
     <div>

@@ -1,5 +1,6 @@
+import React from 'react';
 
-import { createContext } from 'react'
+// Crea il contesto di lingua
+const LanguageContext = React.createContext();
 
-export const LanguageContext = createContext('en')
-
+export default LanguageContext;

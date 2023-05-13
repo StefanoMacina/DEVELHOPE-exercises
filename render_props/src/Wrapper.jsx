@@ -1,24 +1,17 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 
-export class Wrapper extends Component {
-    state = {
-        count : 0
+function Wrapper({counter}) {
+    const[count, setCount] = useState(0)
+
+    const handleInc = () => {
+        setCount(count + 1)
     }
 
-//incrementa il contatore (dal wrapper)
-    incCount = () => {
-        this.setState({
-            count : this.state.count + 1
-        })
-    }
-
-  render() {
-    return (
-      <div>
-        {this.props.render(this.state.count, this.incCount)}
-      </div>
-    )
-  }
+  return (
+    <div>
+        {props.render(count, handleInc)}
+    </div>
+  )
 }
 
 export default Wrapper
