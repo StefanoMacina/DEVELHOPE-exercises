@@ -6,27 +6,21 @@ function CarDetails({ initialData = { model: "car", year: "2020", color: "orange
   const modelRef = useRef();
   const yearRef = useRef();
   const colorRef = useRef();
+  const formRef = useRef();
+
+  
 
   useEffect(() => {
-    modelRef.current.defaultValue = initialData.model;
-    yearRef.current.defaultValue = initialData.year;
-    colorRef.current.defaultValue = initialData.color;
-  });
+    modelRef.current.defaultValue = 'car';
+    yearRef.current.defaultValue = 2020;
+    colorRef.current.defaultValue = 'orange';
+    formRef.current.reset();
+    formRef.current.elements.model.focus()
+  }, [initialData]);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const formInput = {
-        model: modelRef.current.value,
-        year: yearRef.current.value,
-        color: colorRef.current.value,
-    }
-    e.target.reset()
-    console.log(formInput);
-
-  }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form ref={formRef}>
       <input type="text" name="model" ref={modelRef} />
       <input type="text" name="year" ref={yearRef} />
       <input type="text" name="color" ref={colorRef} />
