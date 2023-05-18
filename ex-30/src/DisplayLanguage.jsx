@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useContext } from "react";
+import LanguageContext from "./LanguageContext";
 
 function DisplayLanguage() {
+  const language = useContext(LanguageContext)
   return (
-    <div>DisplayLanguage</div>
-  )
+    <>
+      <h1>language : {language}</h1>
+    </>
+  );
 }
 
-export default DisplayLanguage
+export default DisplayLanguage;
