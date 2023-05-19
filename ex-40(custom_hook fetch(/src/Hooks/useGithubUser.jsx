@@ -5,11 +5,13 @@ import { useEffect } from "react";
 function useGithubUser(username) {
   const [data, setData] = useState(null);
 
+
   async function fetchGithubUser(username) {
     try {
-      const response = await fetch(`https://api.github.com/users/${username}`);
+      const response = await fetch(`https://apgithub.com/users/${username}`);
       const json = await response.json();
       setData(json);
+      setLoading(false)
     } catch (error) {
       console.log(error.name);
     }
@@ -18,10 +20,11 @@ function useGithubUser(username) {
 
   useEffect(() => {
     fetchGithubUser(username);
-  }, [username]);
+  }, []);
 
   return {
     data
+  
   }
     
   
