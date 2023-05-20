@@ -4,6 +4,7 @@ import Counter from "./Counter";
 import ShowGithubUser from "./ShowGithubUser";
 import Welcome from "./Welcome";
 import {Link} from 'react-router-dom'
+import Nopage from "./Nopage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Welcome />}></Route>
         <Route path="/Counter" element={<Counter />}></Route>
         <Route path="/users/:username" element={<ShowGithubUser />}></Route>
+        <Route path="*" element={<Nopage />}></Route>
       </Routes>
     </>
   );
