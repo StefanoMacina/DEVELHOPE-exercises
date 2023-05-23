@@ -4,12 +4,15 @@ import Welcome from "./Components/Welcome";
 import Counter from "./Components/Counter";
 import ShowGithubUser from "./Components/ShowGithubUser";
 import NotFound from "./Components/NotFound";
+import GithubUserList from "./Components/GithubUserList";
+import { GithubUserListIndex } from "./Components/GithubUserListIndex";
 
 
 function App() {
   return (
     <Router>
-      <nav>
+      <div>
+        <nav>
           <ul>
             <li>
               <Link to="/">Welcome</Link>
@@ -18,18 +21,21 @@ function App() {
               <Link to="/counter">Counter</Link>
             </li>
             <li>
-              <Link to="/users/StefanoMAcina">User</Link>
+              <Link to="/users">User</Link>
             </li>
           </ul>
         </nav>
-      <Routes>
-        <Route path="/" element={<Welcome name="Stefano" />}></Route>
-        <Route path="/Counter" element={<Counter />}></Route>
-        <Route path="/users" element={<Outlet/>} >
-          <Route path=":username" element={<ShowGithubUser />}></Route>
-        </Route>
-        <Route path="*" element={<NotFound/>} />
-      </Routes>
+
+        <Routes>
+          <Route path="/" element={<Welcome name="Stefano" />} />
+          <Route path="/counter" element={<Counter />} />
+          <Route path="/users" element={<GithubUserList />}>
+            <Route index element={<GithubUserListIndex />} />
+            <Route path=":username" element={<ShowGithubUser />} />
+          </Route>
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </div>
     </Router>
   );
 }
