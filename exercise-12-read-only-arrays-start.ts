@@ -8,7 +8,7 @@
 
 const languages : ReadonlyArray<string>= ["Mongolian", "French", "Basque", "Thai"];
 
-languages[2] = "Hausa";
+// languages[2] = "Hausa";
 
 console.log(languages);
 
@@ -18,7 +18,7 @@ console.log(languages);
 
 const currencies : readonly string[]= ["NZD", "THB", "NGN", "EUR", "COP", "INR"];
 
-currencies.reverse();
+// currencies.reverse();
 
 console.log(currencies);
 
