@@ -4,4 +4,4 @@ const person1 = {
     job : 'developer'
 }
 
-export default person1
+module.exports = person1
