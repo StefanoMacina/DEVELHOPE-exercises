@@ -1,0 +1,19 @@
+{
+  "name": "pack_examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "message.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cli-color": "^2.0.3",
+    "fastify": "^4.17.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.8"
+  }
+}
