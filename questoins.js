@@ -45,6 +45,26 @@
 
 
 // --------------------------------------------
+// ------------ CALLBACK ----------------------
+
+/*   Una callbacl è una funzione passata ad un'altra funzione come argomento,
+     questo permette ad una funzione di richiamare un altra funzione che viene eseguita al termine della prima
+     sono utili durante la scrittura di codice asincrono
+*/
+
+              // function greeting(name){
+              //   console.log(`hello, ${name}`)
+              // }
+
+              // function processInput(cb){
+              //   const name = 'stefano'
+              //   cb(name)
+              // }
+              // //           greeting = callback function
+              // processInput(greeting)
+
+
+// --------------------------------------------
 // -------------- PROTOTIPI -------------------
 /* 
   il concetto di "prototipo" è strettamente legato all'ereditarietà degli oggetti.
