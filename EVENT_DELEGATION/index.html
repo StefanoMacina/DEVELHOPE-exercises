@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="lista">
+      <li>el 1</li>
+      <li>el 2</li>
+      <li>el 3</li>
+      <li>el 4</li>
+      <li>el 5</li>
+    </ul>
+    <script>
+      var lista = document.getElementById("lista");
+
+      lista.addEventListener("click", function (e) {
+       
+          console.log(e.target.textContent);
+        
+     });
+
+     const el = document.createElement('div')
+     el.innerHTML = '<h2>Hello</h2>'
+     lista.appendChild(el)
+   
+    </script>
+  </body>
+</html>

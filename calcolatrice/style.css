@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border: 1px solid black;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+}
+table thead {
+  justify-content: center;
+  height: min-content;
+}
+table thead tr {
+  height: 150px;
+}
+table thead tr td {
+  text-align: center;
+  border: 1px solid red;
+}
+table tbody tr td {
+  text-align: center;
+  border: 1px solid black;
+}
+
+/*# sourceMappingURL=style.css.map */

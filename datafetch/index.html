@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="list"></ul>
+    <script>
+      const list = document.getElementById("list");
+
+      async function fetchData(url) {
+        const res = await fetch(url);
+        const data = await res.json();
+        data.forEach((element) => {
+          if (element.name.startsWith("c")) {
+            const el = document.createElement("li");
+            const img = document.createElement("img");
+            img.src = element.img;
+            el.innerHTML = `<h1>${element.name}</h1>
+                    ${element.price}
+                    <img src="${img}"/>
+                    <p>${element.type}</p>`;
+            list.append(el);
+          }
+        });
+        const counter = document.createElement("h1");
+        counter.innerHTML = data.length;
+        list.append(counter);
+      }
+
+      fetchData(
+        "https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json"
+      );
+    </script>
+  </body>
+</html>
