@@ -35,19 +35,20 @@
     utile per creare dati privati leggibili comunque dalla funzione che viene richiamata
 */
 
-              // (function outer(){
+              // function outer(){
               //   const x = 10
               //   function inner(){
               //     console.log(x)
               //   }
               //   inner()
-              // })()
+              // }
+              // outer()
 
 
 // --------------------------------------------
 // ------------ CALLBACK ----------------------
 
-/*   Una callbacl è una funzione passata ad un'altra funzione come argomento,
+/*   Una callback è una funzione passata ad un'altra funzione come argomento,
      questo permette ad una funzione di richiamare un altra funzione che viene eseguita al termine della prima
      sono utili durante la scrittura di codice asincrono
 */
@@ -64,6 +65,8 @@
               // processInput(greeting)
 
 
+
+
 // --------------------------------------------
 // -------------- PROTOTIPI -------------------
 /* 
@@ -72,6 +75,9 @@
   Quando si accede a una proprietà o un metodo su un oggetto, 
   JavaScript cerca prima di tutto all'interno dell'oggetto stesso e, se non viene trovato, 
   procede a cercarlo nel prototipo dell'oggetto. */
+
+
+
 
 //----------------------------------------------------------------
 //--------------- DIFFERENZA TRA SYNCHRONOUS E ASYNCHRONOUS ------
@@ -192,6 +198,7 @@ anche alcuni metodi degli array :*/
 
 // ---------------------------------------------------------------------
 // ------------ MODIFICARE OGGETTO DICHIARATO CON CONST -----------------
+
 /* posso modificare i valori di un oggetto dichiarato con const, ma non posso
 modificare l'intero oggetto */
 
@@ -219,23 +226,3 @@ modificare l'intero oggetto */
 
 
 
-/*  
-
-    Lungimiranza
-    Ambizione
-    Orientamento al cliente
-
-    Integrità e trasparenza
-    Innovazione
-    Meritocrazia
-    Professionalità
-    Onestà e legalità
-    Lavoro di gruppo
-    Crescita Professionale
-    Formazione
-    Divertimento
-    Responsabilità Sociale
-    Sviluppo
-    Libertà
-    
-*/
