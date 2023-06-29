@@ -1,18 +1,19 @@
 {
   "name": "example",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "planets.js",
   "scripts": {
-    "start": "nodemon planets.mjs"
+    "start": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "joi": "^17.9.2",
     "pg-promise": "^11.5.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
-  }
+  },
+  "description": ""
 }
