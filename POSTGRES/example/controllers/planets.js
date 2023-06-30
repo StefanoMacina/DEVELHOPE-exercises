@@ -1,7 +1,7 @@
 const pgp = require("pg-promise");
 const Joi = require('joi')
 
-//                          user        psw     url      port  db_name
+//                            user       psw     url      port  db_name
 const db = pgp()("postgres://postgres:appleinc1@localhost:5432/postgres");
 
 const setUpDb = async () => {
@@ -17,11 +17,6 @@ const setUpDb = async () => {
   await db.none(`INSERT INTO planets(name) VALUES ('Mars')`);
 };
 setUpDb();
-
-let planets = [
-  { id: 1, name: "mars" },
-  { id: 2, name: "earth" },
-];
 
 const getAll = async (req, res) => {
   const planets = await db.many(`SELECT * FROM planets`);
