@@ -35,15 +35,16 @@
     utile per creare dati privati leggibili comunque dalla funzione che viene richiamata
 */
 
-              // function outer(){
-              //   const x = 10
+              // function outer(name){
+              //    const something = name.toUpperCase()
+                 
               //   function inner(){
-              //     console.log(x)
+              //     console.log(` Hello ${something}`)
               //   }
               //   inner()
               // }
-              // outer()
 
+              // outer('luca')
 
 // --------------------------------------------
 // ------------ CALLBACK ----------------------
@@ -53,30 +54,37 @@
      sono utili durante la scrittura di codice asincrono
 */
 
-              // function greeting(name){
-              //   console.log(`hello, ${name}`)
-              // }
+                // function sum (a,b){
+                //   return a + b
+                // }
 
-              // function processInput(cb){
-              //   const name = 'stefano'
-              //   cb(name)
-              // }
-              // //           greeting = callback function
-              // processInput(greeting)
+                // function divide (a,b){
+                //   return a/b
+                // }
 
+                // function calculate(x,y,operation){
+                //   return operation(x,y)
+                // }
 
-
+                // console.log(calculate(2,4,divide))
 
 // --------------------------------------------
-// -------------- PROTOTIPI -------------------
+// -------------- __PROTO__ -------------------
 /* 
   il concetto di "prototipo" è strettamente legato all'ereditarietà degli oggetti.
-  Ogni oggetto in JavaScript ha un riferimento al suo prototipo, che è un oggetto da cui eredita proprietà e metodi. 
-  Quando si accede a una proprietà o un metodo su un oggetto, 
-  JavaScript cerca prima di tutto all'interno dell'oggetto stesso e, se non viene trovato, 
-  procede a cercarlo nel prototipo dell'oggetto. */
+  Ogni oggetto in JavaScript è un'stanza del suo prototipo,il __proto__ è un oggetto da cui eredita proprietà e metodi. 
+  Quando si accede a una proprietà o un metodo su un oggetto, javascript lo cerca all'interno della variabile
+   e all'interno del prototype
+  */
+
+  // __proto__ : Object + tutti i metodi applicabili o aggiunti 
+  const dude = {} 
+
+  //__proto__ : Array + tutti i metodi applicabili o aggiunti
+  const array = []
 
 
+console.log(array);
 
 
 //----------------------------------------------------------------
