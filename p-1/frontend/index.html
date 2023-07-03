@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list">
+
+    </ul>
+    <button id="fetchBtn">fetchdata</button>
+    <button id="avgBtn" disabled>avgBtn</button>
+
+    <script>
+        const list = document.getElementById('list')
+        const fetchBtn = document.getElementById('fetchBtn')
+        const avgBtn = document.getElementById('avgBtn')
+
+        const url = 'http://localhost:3000/api/list'
+
+        let isDataFetched = false
+        let data = []
+        
+        async function fetchData(){
+            try {
+                const rsp = await fetch(url)
+                const json = await rsp.json()
+                data = json.data
+                isDataFetched = true
+                data.forEach(user => {
+                    const li = document.createElement('li')
+                    li.innerText = user.name + " " + user.age
+                    list.append(li)
+                });
+                avgBtn.disabled = false
+                isDataFetched = true
+                
+            } catch (error) {
+                console.log(error.name + error.stack)
+            }
+            
+        }
+
+        function calcAvgAge(){
+            if(isDataFetched){
+               const newArray = (data.reduce((acc, curr) => acc + curr.age, 0))/data.length
+               const age = document.createElement('h1')
+               age.innerText = newArray
+               list.append(age)
+            }
+        }
+
+        fetchBtn.addEventListener('click', fetchData)
+        avgBtn.addEventListener('click', calcAvgAge)
+        
+    </script>
+</body>
+</html>

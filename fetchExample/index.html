@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>users list</h1>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <ul id="list"></ul>
+    AVG NAME LENGTH:
+    <h2 id="names"></h2>
+    AVG EMAIL LENGTH:
+    <h2 id="emails"></h2>
+    <script>
+      const list = document.getElementById("list");
+      const names = document.getElementById('names')
+      const emails = document.getElementById('emails')
+
+      const url = "https://jsonplaceholder.typicode.com/users";
+
+      async function fetchData() {
+        try {
+          const res = await axios(url);
+          const data = res.data;
+          data.forEach((user) => {
+            const li = document.createElement("li")
+            li.innerText = user.name + " " + user.email
+            list.append(li);
+
+          });
+          const avgName = (data.reduce((acc, curr) => acc + curr.name.length, 0))/data.length
+          names.append(avgName)
+          const avgEmail = (data.reduce((acc, curr) => acc + curr.email.length, 0))/data.length
+          emails.append(avg)
+        } catch (error) {
+          console.log(error.name);
+        }
+      }
+      fetchData();
+    </script>
+  </body>
+</html>
