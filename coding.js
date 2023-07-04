@@ -116,3 +116,39 @@ const axios = require('axios')
 // const persone = [ernesto, prof1]
 
 // persone.forEach((p) => p.sayHi())
+
+// -------------------------------------------------------------------------------------------------------
+// ------------------ CONTROLLA SE UN ARRAY O UNA STRINGA è UN PALINDROMO --------------------------------
+
+const string = [1,2,1,1]
+// const string = 'anna'
+
+function isPalindrom(arg){
+
+  if(typeof arg === "string"){
+
+    let toArray = arg.split('')
+    let reversed = []
+  
+    for(let i = toArray.length -1  ; i >= 0; i--){
+      reversed.push(toArray[i])
+    }
+   
+    let isTrue = toArray.join('').toLowerCase() === reversed.join('').toLowerCase()
+    console.log(isTrue)
+
+  } else if(Array.isArray(arg) ){
+    let oldArg = [...arg]
+
+    let reversedArg = arg.reverse()
+
+    let isTrue = reversedArg.join() === oldArg.join()
+
+    console.log(isTrue)
+  } else {
+    console.log('how can i check if an object is a palindrom?')
+  }
+  
+}
+
+isPalindrom(string)

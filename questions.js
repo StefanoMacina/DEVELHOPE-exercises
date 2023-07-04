@@ -77,14 +77,15 @@
    e all'interno del prototype
   */
 
-  // __proto__ : Object + tutti i metodi applicabili o aggiunti 
-  const dude = {} 
+//   // __proto__ : Object + tutti i metodi applicabili o aggiunti 
+//   const dude = {} 
 
-  //__proto__ : Array + tutti i metodi applicabili o aggiunti
-  const array = []
+//   //__proto__ : Array + tutti i metodi applicabili o aggiunti
+//   const array = []
 
 
-console.log(array);
+// console.log(array);
+
 
 
 //----------------------------------------------------------------
@@ -282,3 +283,11 @@ modificare l'intero oggetto */
         // luigi.sayHello()
         // stefano.sayHello()
         
+
+
+
+
+
+
+
+
