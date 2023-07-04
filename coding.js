@@ -63,11 +63,56 @@ const axios = require('axios')
                 // console.log({el});
                 // console.log({array});
 
-//---------------------------------------------------------------------
-//------ Esercizio: Conta il numero di vocali in una stringa ----------
+
+                
+
+//-------------------------------------------------------------------------------------------------------------
+//------ Esercizio: Crea una classe persona e due classi teacher e student che ereditano da persona ----------
 
 
+// class Persona{
+//     constructor(name, age){
+//         this.name = name;
+//         this.age = age
+//     }
+
+//     sayHi(){
+//         console.log(`hi my name is ${this.name}`);
+//     }
+// }
+
+// class Teacher extends Persona{
+//     constructor(name, age, course){
+//         super(name, age)
+//         this.course = course
+//     }
+
+//     insegna(){
+//         console.log(`hi, im teaching ${course} `)
+//     }
+
+//     sayHi(){
+//         console.log(`hello!!`)
+//     }
+// }
+
+// class Students extends Persona{
+//     constructor(name, age, classs){
+//         super(name, age)
+//         this.classs = classs
+//     }
+
+//     study(){
+//         console.log(`hi, im studying`)
+//     }
+// }
 
 
+// const ernesto = new Students('ernesto', 14, 1945)
+
+// const prof1 = new Teacher('patty', 45, "storia") 
 
 
+// const persone = [ernesto, prof1]
+
+// persone.forEach((p) => p.sayHi())
