@@ -150,7 +150,7 @@ console.log(array);
   // ---------------- COPIA PER RIFERIMENTO VS VALORE -----------------
 
   // VALORE : le variabili puntano a due diverse celle di memoria,
-  //          i dati primitivi sono passati per valore
+  //          i dati primitivi sono passati sempre per valore
 
               // let var1 = 10
               // let var2 = var1
@@ -233,4 +233,52 @@ modificare l'intero oggetto */
               // console.log(person1);
 
 
+// ---------------------------------------------------------------------
+// ------------------ FACTORY FUNCTIONS --------------------------------
+/* Le factory functions sono funzioni che restituiscono un oggetto, evitano la duplicazione di codice
+  non posso modificare le caratteristiche di un oggetto (name) direttamente */
+  
+  //   function person(name, age){
+    //     return {
+      //         name,
+      //         age,
+      //         sayHello(){
+        //             console.log(`hello, i'm ${name}`) 
+        //         }
+        //     }
+        // }
+            
+        // const Luigi = person("Luigi", 34)
 
+        // console.log(Luigi);
+        // Luigi.sayHello()
+        
+        // Luigi.name = 'Stefano'
+        // console.log(Luigi);
+        // Luigi.sayHello()
+
+
+
+// -------------------------------------------------------------------------
+// ------------------ CONSTRUCTOR FUNCTIONS --------------------------------
+
+/*  Le constructor functions permettono di creare un istanza da una funzione che crea una classe
+  , vengono invocate tramite il metodo "new" */
+
+        // function Person(name, age){
+        //   this.name = name;
+        //   this.age = age;
+        //   this.sayHello = function(){
+        //     console.log(`Hello, i am ${name}`)
+        //   }
+        // }
+
+        // const luigi = new Person('Luigi', 34)
+        // const stefano = new Person('Stefano', 24)
+
+        // console.log(luigi);
+        // console.log(stefano);
+
+        // luigi.sayHello()
+        // stefano.sayHello()
+        
